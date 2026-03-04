@@ -44,13 +44,16 @@ def ver_promedio():
     print("  Promedio:", promedio)
     print("  Estado:", estado)
 
-
 def ver_todos():
     if not estudiantes:
-        print("  No hay estudiantes registrados.")
+        print("No hay estudiantes registrados.")
         return
+    print("  LISTA DE ESTUDIANTES:")
     for nombre, notas in estudiantes.items():
-        print(" ", nombre, ":", notas)
+        promedio = sum(notas) / len(notas)
+        print("  Estudiante:", nombre)
+        print("  Notas:", notas)
+        print("  Promedio:", promedio)
 
 
 def menu():
