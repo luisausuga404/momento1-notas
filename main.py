@@ -21,7 +21,7 @@ def registrar_nota():
         return
     nota = float(input("  Nota (0.0 - 5.0): "))
     estudiantes[nombre].append(nota)
-    print("  Nota registrada.")
+    print("  Nota registrada exitosamente.")
 
 
 def ver_promedio():
